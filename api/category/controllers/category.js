@@ -13,6 +13,7 @@ module.exports = {
         category_in: entities[i].id,
       });
     }
+    entities = entities.sort((a, b) => b.articlesCount - a.articlesCount);
     return entities;
   },
 };

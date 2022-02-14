@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/articles/recomendation",
+      "handler": "article.getRandomArticles",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/articles/count",
       "handler": "article.count",
       "config": {
